@@ -172,7 +172,7 @@ class AES:
     def execute(self, MasterKeyList, plain_text):
         round = 0
         cipher_text = []
-        while round <= 1:
+        while round <= 10:
             if round == 0:
                 cipher_text = self.initial_round(plain_text)
             else:
